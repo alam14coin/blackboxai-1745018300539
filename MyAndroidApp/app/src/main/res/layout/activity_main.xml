@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D64545"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello\nwelcome back"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:fontFamily="@font/cursive_font"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="8dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#D3D3D3"
+        android:layout_below="@id/greetingText"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:backgroundTintMode="src_in"
+        android:backgroundTint="#D3D3D3"
+        android:background="@drawable/rounded_corners">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:background="#D64545"
+            android:fontFamily="@font/cursive_font"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTintMode="src_in"
+            android:backgroundTint="#D64545"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:background="#D64545"
+            android:fontFamily="@font/cursive_font"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTintMode="src_in"
+            android:backgroundTint="#D64545"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="exit"
+            android:textColor="#FFFFFF"
+            android:background="#D64545"
+            android:fontFamily="@font/cursive_font"
+            android:textSize="24sp"
+            android:backgroundTintMode="src_in"
+            android:backgroundTint="#D64545"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>
