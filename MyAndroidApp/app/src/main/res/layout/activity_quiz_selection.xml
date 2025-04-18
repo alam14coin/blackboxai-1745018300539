@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quizGrid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D64545"
+    android:columnCount="3"
+    android:rowCount="4"
+    android:padding="24dp"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false">
+
+    <TextView
+        android:id="@+id/chooseQuizText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chose a quiz:"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="@font/cursive_font"
+        android:layout_row="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="start"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Buttons 1 to 12 -->
+    <Button
+        android:id="@+id/btnQuiz1"
+        style="@style/QuizButton"
+        android:text="1"
+        android:layout_row="1"
+        android:layout_column="0" />
+    <Button
+        android:id="@+id/btnQuiz2"
+        style="@style/QuizButton"
+        android:text="2"
+        android:layout_row="1"
+        android:layout_column="1" />
+    <Button
+        android:id="@+id/btnQuiz3"
+        style="@style/QuizButton"
+        android:text="3"
+        android:layout_row="1"
+        android:layout_column="2" />
+    <Button
+        android:id="@+id/btnQuiz4"
+        style="@style/QuizButton"
+        android:text="4"
+        android:layout_row="2"
+        android:layout_column="0" />
+    <Button
+        android:id="@+id/btnQuiz5"
+        style="@style/QuizButton"
+        android:text="5"
+        android:layout_row="2"
+        android:layout_column="1" />
+    <Button
+        android:id="@+id/btnQuiz6"
+        style="@style/QuizButton"
+        android:text="6"
+        android:layout_row="2"
+        android:layout_column="2" />
+    <Button
+        android:id="@+id/btnQuiz7"
+        style="@style/QuizButton"
+        android:text="7"
+        android:layout_row="3"
+        android:layout_column="0" />
+    <Button
+        android:id="@+id/btnQuiz8"
+        style="@style/QuizButton"
+        android:text="8"
+        android:layout_row="3"
+        android:layout_column="1" />
+    <Button
+        android:id="@+id/btnQuiz9"
+        style="@style/QuizButton"
+        android:text="9"
+        android:layout_row="3"
+        android:layout_column="2" />
+    <Button
+        android:id="@+id/btnQuiz10"
+        style="@style/QuizButton"
+        android:text="10"
+        android:layout_row="4"
+        android:layout_column="0" />
+    <Button
+        android:id="@+id/btnQuiz11"
+        style="@style/QuizButton"
+        android:text="11"
+        android:layout_row="4"
+        android:layout_column="1" />
+    <Button
+        android:id="@+id/btnQuiz12"
+        style="@style/QuizButton"
+        android:text="12"
+        android:layout_row="4"
+        android:layout_column="2" />
+
+</GridLayout>
