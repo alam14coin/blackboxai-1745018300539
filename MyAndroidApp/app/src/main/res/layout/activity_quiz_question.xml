@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D64545"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/questionNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question number 1"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="@font/cursive_font"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/speech_bubble"
+        android:text="15s"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="@font/cursive_font"
+        android:gravity="center"
+        android:layout_below="@id/questionNumberText"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the question here??"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/timerText"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/answersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/questionText"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/answer1"
+            style="@style/QuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="chose 1"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/answer2"
+            style="@style/QuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="chose 2"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/answer3"
+            style="@style/QuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="chose 3"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/answer4"
+            style="@style/QuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="chose 3" />
+
+    </LinearLayout>
+
+</RelativeLayout>
